@@ -1,5 +1,6 @@
 // Esto importa por defecto el index.js
 import {Todo, TodoList} from './classes';
+import { crearTodoHtml } from './js/components'
 
 import './styles.css';
 // import img from './assets/webpack.png'
@@ -14,3 +15,5 @@ todoList.nuevoTodo(tarea);
 todoList.nuevoTodo(tarea2);
 
 console.log(todoList)
+
+crearTodoHtml(tarea);
