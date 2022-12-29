@@ -1,3 +1,5 @@
+import {Todo} from './todo.class'
+
 export class TodoList {
     constructor(){
         // this.todos = [];
@@ -35,5 +37,9 @@ export class TodoList {
 
     cargarLocalStorage(){
         this.todos = localStorage.getItem('todo') ?  JSON.parse(localStorage.getItem('todo')) : [];
+
+        // this.todos = this.todos.map(obj => Todo.fromJson(obj));
+        // Esta es la manera corta de hacer lo de arriba, xq solo pasa un argumento
+        this.todos = this.todos.map(Todo.fromJson);
     }
 }
