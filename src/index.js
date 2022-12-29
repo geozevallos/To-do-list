@@ -7,12 +7,9 @@ import './styles.css';
 
 export const todoList = new TodoList();
 const tarea = new Todo('Aprender JS');
-const tarea2 = new Todo('Sacar a duque');
-
 
 todoList.nuevoTodo(tarea);
 
-todoList.nuevoTodo(tarea2);
 
 console.log(todoList)
 
